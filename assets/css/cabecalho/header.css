@@ -1,0 +1,36 @@
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 2rem;
+    align-items: center;
+    padding: 2rem 1rem;
+    
+}
+
+.cabecalho__logo {
+    margin: 1rem;
+}
+
+.cabecalho__pesquisa {
+    opacity: 16%;
+    color: #fdfdfd;
+    width: 60%;
+    height: 2.5rem;
+    margin: 1rem 1rem 1rem 5rem;
+    border-radius: 5px;
+}
+
+.cabecalho__perfil {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__perfil-imagem {
+    margin: 1rem 1rem 1rem 6rem;
+}
+
+.cabecalho__perfil-usuario {
+    text-decoration: none;
+    color: #FFFFFF;
+}
