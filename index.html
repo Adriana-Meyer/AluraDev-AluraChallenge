@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraDev - Challenge</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho/header.css">
+</head>
+<body>
+   <header class="cabecalho">
+        <img src="./assets/img/Logo.png" alt="Logo AluraDev" class="cabecalho__logo"/>
+        <input type="search" name="pesquisa" placeholder="Busque por algo" class="cabecalho__pesquisa"/>
+        <div class="cabecalho__perfil"> 
+            <img src="./assets/img/Harry.png" alt="Foto Perfil" class="cabecalho__perfil-imagem"/>
+            <a href="#" class="cabecalho__perfil-usuario">Harry</a>
+        </div>
+        
+   </header>
+   <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#">Editor de código</a></li>
+            <li><a href="#">Comunidade</a></li>
+        </ul>
+   </nav>
+   <main>
+        <textarea cols="90" rows="20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima, in magni deleniti molestiae rerum atque amet culpa, modi error mollitia odit nulla nostrum, maiores voluptatibus itaque. Ipsam, vel molestiae.</textarea>
+        <button>Visualizar com highlight</button>
+   </main>
+   <aside>
+        <h2>Seu projeto</h2>
+        <input type="text" name="Nome do projeto" placeholder="Nome do seu projeto" required/>
+        <textarea placeholder="Descrição do seu projeto" required></textarea>
+        <h2>Personalização</h2>
+        <select required>
+            <option value="Javascript">Javascript</option>
+            <option value="Javascript">Java</option>
+            <option value="Javascript">Python</option>
+            <option value="Javascript">PHP</option>
+            <option value="Javascript">C#</option>
+            <option value="Javascript">C++</option>
+        </select>
+        <input type="color" required>
+        <button type="submit">Salvar projeto</button>
+   </aside>
+</body>
+</html>
