@@ -9,21 +9,21 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/global.css">
-    <link rel="stylesheet" href="./assets/css/cabecalho/header.css">
     <link rel="stylesheet" href="./assets/css/container.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho/header.css">
     <link rel="stylesheet" href="./assets/css/menu-lateral/menu.css">
+    <link rel="stylesheet" href="./assets/css/editor-codigo/editor.css">
 </head>
 <body>
    <header class="cabecalho">
-        <img src="./assets/img/Logo.png" alt="Logo AluraDev" class="cabecalho__logo"/>
+        <span class="cabecalho__logo"><img src="./assets/img/Logo.png" alt="Logo AluraDev" /></span>
         <input type="search" name="pesquisa" placeholder="Busque por algo" class="cabecalho__pesquisa"/>
         <div class="cabecalho__perfil"> 
             <img src="./assets/img/Harry.png" alt="Foto Perfil" class="cabecalho__perfil-imagem"/>
             <a href="#" class="cabecalho__perfil-usuario">Harry</a>
         </div>
-        
    </header>
    <div class="containerPrincipal">
         <nav class="menu">
@@ -40,8 +40,13 @@
                 </ul>
         </nav>
         <main>
-                <textarea cols="90" rows="20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima, in magni deleniti molestiae rerum atque amet culpa, modi error mollitia odit nulla nostrum, maiores voluptatibus itaque. Ipsam, vel molestiae.</textarea>
-                <button>Visualizar com highlight</button>
+            <div class="editor__container">
+                <div class="editor__conteudo">
+                    <img class="editor__iconeMac" src="./assets/img/mac_buttons.png">
+                    <p class="editor__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima, in magni deleniti molestiae rerum atque amet culpa, modi error mollitia odit nulla nostrum, maiores voluptatibus itaque. Ipsam, vel molestiae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus voluptas harum cupiditate libero totam autem quos at obcaecati magni aperiam quod quia repudiandae doloribus culpa, hic, perferendis vero suscipit quaerat.</p>
+                </div>
+            </div> 
+            <button type="button" class="editor__botao">Visualizar com highlight</button>
         </main>
         <aside>
                 <h2>Seu projeto</h2>

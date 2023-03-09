@@ -1,7 +1,7 @@
 .cabecalho {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 100vw;
     height: 2rem;
     align-items: center;
     padding: 3rem 1rem;
@@ -9,15 +9,15 @@
 }
 
 .cabecalho__logo {
+    width: 25vw;
     padding: 1rem;
 }
 
 .cabecalho__pesquisa {
     background-color: #ffffff2d;
     color: #FFFFFF;
-    width: 50%;
+    width: 50vw;
     height: 2.5rem;
-    margin: 1rem 1rem 1rem 5rem;
     padding: 1.35rem;
     border-radius: 5px;
     border: none;
@@ -34,11 +34,11 @@
     display: flex;
     align-items: center;
     padding-left: 8rem;
-    width: 25%;
+    width: 25vw;
 }
 
 .cabecalho__perfil-imagem {
-    margin: 1rem 1rem 1rem 6rem;
+    margin: 1rem;
 }
 
 .cabecalho__perfil-usuario {

@@ -1,7 +1,8 @@
 .menu {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 25vw;
+    margin-right: 1rem;
 }
 
 .menu__titulo {
