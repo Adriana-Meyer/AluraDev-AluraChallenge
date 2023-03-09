@@ -1,0 +1,64 @@
+.cadastro__container {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    padding: 0 2rem;
+}
+
+.cadastro__titulo {
+    font-size: 12px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.cadastro__nomeProjeto, .cadastro__descricao, .cadastro__opcoes {
+    background-color: #ffffff2d;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.cadastro__nomeProjeto::placeholder, .cadastro__descricao::placeholder{
+    color: #ffffffb9;
+    opacity: 1;
+}
+
+.cadastro__nomeProjeto, .cadastro__opcoes {
+    padding: 0.85rem;
+}
+
+.cadastro__descricao {
+    padding: 1.2rem 0.85rem;
+    margin: 0 0 3rem 0;
+}
+
+.cadastro__opcoes {
+    color: #ffffffb9;
+}
+
+.cadastro__opcoes > option {
+    background-color: #051d3bc5;
+    font-size: 0.95rem;
+}
+
+.cadastro__cor {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #C4C4C4;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    padding: 0.25rem;
+}
+
+.cadastro__botao {
+    background-color: #5081FB;
+    color: #051D3B;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 8px;
+}

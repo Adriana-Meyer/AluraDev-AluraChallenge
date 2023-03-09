@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="./assets/css/cabecalho/header.css">
     <link rel="stylesheet" href="./assets/css/menu-lateral/menu.css">
     <link rel="stylesheet" href="./assets/css/editor-codigo/editor.css">
+    <link rel="stylesheet" href="./assets/css/menu-cadastro/cadastro.css">
 </head>
 <body>
    <header class="cabecalho">
-        <span class="cabecalho__logo"><img src="./assets/img/Logo.png" alt="Logo AluraDev" /></span>
+        <div class="cabecalho__logo"><img src="./assets/img/Logo.png" alt="Logo AluraDev" /></div>
         <input type="search" name="pesquisa" placeholder="Busque por algo" class="cabecalho__pesquisa"/>
         <div class="cabecalho__perfil"> 
             <img src="./assets/img/Harry.png" alt="Foto Perfil" class="cabecalho__perfil-imagem"/>
@@ -48,21 +49,19 @@
             </div> 
             <button type="button" class="editor__botao">Visualizar com highlight</button>
         </main>
-        <aside>
-                <h2>Seu projeto</h2>
-                <input type="text" name="Nome do projeto" placeholder="Nome do seu projeto" required/>
-                <textarea placeholder="Descrição do seu projeto" required></textarea>
-                <h2>Personalização</h2>
-                <select required>
+        <aside class="cadastro__container">
+                <h2 class="cadastro__titulo">Seu projeto</h2>
+                <input class="cadastro__nomeProjeto" type="text" name="Nome do projeto" placeholder="Nome do seu projeto" required/>
+                <textarea class="cadastro__descricao" placeholder="Descrição do seu projeto" required></textarea>
+                <h2 class="cadastro__titulo">Personalização</h2>
+                <select class="cadastro__opcoes" required>
                     <option value="Javascript">Javascript</option>
-                    <option value="Javascript">Java</option>
-                    <option value="Javascript">Python</option>
-                    <option value="Javascript">PHP</option>
-                    <option value="Javascript">C#</option>
-                    <option value="Javascript">C++</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">HTML</option>
+                    <option value="PHP">CSS</option>
                 </select>
-                <input type="color" required>
-                <button type="submit">Salvar projeto</button>
+                <input class="cadastro__cor" value="#6BD1FF" type="color" required>
+                <button class="cadastro__botao" type="submit">Salvar projeto</button>
         </aside>
     </div>
 </body>

@@ -9,8 +9,8 @@
 }
 
 .cabecalho__logo {
-    width: 25vw;
-    padding: 1rem;
+    width: 22.5vw;
+    padding: 2rem;
 }
 
 .cabecalho__pesquisa {
@@ -19,7 +19,7 @@
     width: 50vw;
     height: 2.5rem;
     padding: 1.35rem;
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
