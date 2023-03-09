@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.menu__titulo {
+    font-size: 12px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    margin-bottom: 1.7rem;
+}
+
+.menu__itemLista {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 1rem;
+}
+
+.inativo {
+    opacity: 50%;
+}

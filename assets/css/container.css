@@ -1,0 +1,5 @@
+.containerPrincipal {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+}

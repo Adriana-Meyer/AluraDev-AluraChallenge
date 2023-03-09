@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/cabecalho/header.css">
+    <link rel="stylesheet" href="./assets/css/container.css">
+    <link rel="stylesheet" href="./assets/css/menu-lateral/menu.css">
 </head>
 <body>
    <header class="cabecalho">
@@ -23,32 +25,40 @@
         </div>
         
    </header>
-   <nav>
-        <h2>Menu</h2>
-        <ul>
-            <li><a href="#">Editor de código</a></li>
-            <li><a href="#">Comunidade</a></li>
-        </ul>
-   </nav>
-   <main>
-        <textarea cols="90" rows="20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima, in magni deleniti molestiae rerum atque amet culpa, modi error mollitia odit nulla nostrum, maiores voluptatibus itaque. Ipsam, vel molestiae.</textarea>
-        <button>Visualizar com highlight</button>
-   </main>
-   <aside>
-        <h2>Seu projeto</h2>
-        <input type="text" name="Nome do projeto" placeholder="Nome do seu projeto" required/>
-        <textarea placeholder="Descrição do seu projeto" required></textarea>
-        <h2>Personalização</h2>
-        <select required>
-            <option value="Javascript">Javascript</option>
-            <option value="Javascript">Java</option>
-            <option value="Javascript">Python</option>
-            <option value="Javascript">PHP</option>
-            <option value="Javascript">C#</option>
-            <option value="Javascript">C++</option>
-        </select>
-        <input type="color" required>
-        <button type="submit">Salvar projeto</button>
-   </aside>
+   <div class="containerPrincipal">
+        <nav class="menu">
+                <h2 class="menu__titulo">Menu</h2>
+                <ul class="menu__lista">
+                    <li class="menu__itemLista">
+                        <img class="menu__icone" src="./assets/img/icone-editor.png" alt="Link para a página do Editor de Código">
+                        <a href="#" class="menu__link">Editor de código</a>
+                    </li>
+                    <li class="menu__itemLista inativo">
+                        <img class="menu__icone" src="./assets/img/icone-comunidade.png" alt="Link para a página da Comunidade">
+                        <a href="#" class="menu__link">Comunidade</a>
+                    </li>
+                </ul>
+        </nav>
+        <main>
+                <textarea cols="90" rows="20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima, in magni deleniti molestiae rerum atque amet culpa, modi error mollitia odit nulla nostrum, maiores voluptatibus itaque. Ipsam, vel molestiae.</textarea>
+                <button>Visualizar com highlight</button>
+        </main>
+        <aside>
+                <h2>Seu projeto</h2>
+                <input type="text" name="Nome do projeto" placeholder="Nome do seu projeto" required/>
+                <textarea placeholder="Descrição do seu projeto" required></textarea>
+                <h2>Personalização</h2>
+                <select required>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Javascript">Java</option>
+                    <option value="Javascript">Python</option>
+                    <option value="Javascript">PHP</option>
+                    <option value="Javascript">C#</option>
+                    <option value="Javascript">C++</option>
+                </select>
+                <input type="color" required>
+                <button type="submit">Salvar projeto</button>
+        </aside>
+    </div>
 </body>
 </html>
