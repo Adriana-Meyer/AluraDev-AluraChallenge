@@ -1,20 +1,24 @@
+.editor__secao {
+    width: 57%;
+}
+
 .editor__container {
-    display: flex;
-    width: 50vw;
-    height: 60vh;
     background-color: #6BD1FF;
     border: none;
     border-radius: 8px;
+    display: flex;
+    height: 85%;
     padding: 2.2rem;
+    width: 100%;
 }
 
 .editor__conteudo {
     background-color: #141414;
     border: none;
     border-radius: 8px;
-    width: 100%;
-    height: 100%;
     box-shadow: 0px 16px 37px -14px rgba(0,0,0,0.75);
+    height: 100%;
+    width: 100%;
     
 }
 
@@ -23,16 +27,16 @@
 }
 
 .editor__texto {
-    width: 100%;
-    height: 80%;
     background-color: #141414;
-    color: #FFFFFF;
     border: none;
-    padding: 1.2rem;
-    font-size: 14px;
+    color: #FFFFFF;
     font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    height: 80%;
     line-height: 18.46px;
+    padding: 1.2rem;
     resize: none;
+    width: 100%;
 }
 
 .editor__texto:focus {
@@ -40,11 +44,26 @@
 }
 
 .editor__botao {
-    width: 100%;
-    height: 3rem;
     background-color: #5081FB14;
     border: none;
     border-radius: 8px;
     color: #FFFFFF;
+    height: 3rem;
     margin: 1rem 0;
+    width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .editor__secao {
+        height: 28.125rem;
+        padding: 0 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .editor__secao {
+        height: 34.375rem;
+    }
+}
+

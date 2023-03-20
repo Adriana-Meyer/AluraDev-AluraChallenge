@@ -1,22 +1,22 @@
 .cadastro__container {
     display: flex;
     flex-direction: column;
-    width: 25vw;
     padding: 0 2rem;
+    width: 25%;
 }
 
 .cadastro__titulo {
     font-size: 12px;
     letter-spacing: 0.4em;
-    text-transform: uppercase;
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .cadastro__nomeProjeto, .cadastro__descricao, .cadastro__opcoes {
     background-color: #ffffff2d;
-    color: #FFFFFF;
-    border-radius: 5px;
     border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     margin-bottom: 1rem;
@@ -32,12 +32,14 @@
 }
 
 .cadastro__descricao {
-    padding: 1.2rem 0.85rem;
     margin: 0 0 3rem 0;
+    padding: 1.2rem 0.85rem;
+    resize: none;
 }
 
 .cadastro__opcoes {
     color: #ffffffb9;
+    width: 100%;
 }
 
 .cadastro__opcoes > option {
@@ -46,19 +48,64 @@
 }
 
 .cadastro__cor {
-    width: 100%;
-    height: 3rem;
+    background-color: transparent;
     border: 1px solid #C4C4C4;
     border-radius: 8px;
+    height: 3rem;
     margin-bottom: 2rem;
-    background-color: transparent;
     padding: 0.25rem;
+    width: 100%;
 }
 
 .cadastro__botao {
     background-color: #5081FB;
-    color: #051D3B;
-    padding: 0.85rem;
     border: none;
     border-radius: 8px;
+    color: #051D3B;
+    padding: 0.85rem;
+}
+
+@media screen and (max-width: 768px) {
+    .cadastro__container {
+        margin: 2rem 1rem;
+        padding: 0; 
+        width: 95%;
+    }
+
+    .personalizacao__container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cadastro__opcoes {
+        height: 3rem;
+        margin-right: 0.5rem;
+        width: 50%;
+    }
+
+    .cadastro__cor {
+        height: 3rem;
+        margin-left: 0.5rem; 
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .personalizacao__container {
+        flex-direction: column;
+    }
+
+    .cadastro__container {
+        width: 90%;
+    }
+
+    .cadastro__opcoes {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .cadastro__cor {
+        margin-left: 0; 
+        width: 100%;
+    }
 }

@@ -1,28 +1,33 @@
 .cabecalho {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    width: 100vw;
     height: 2rem;
-    align-items: center;
     padding: 3rem 1rem;
+    width: 100%;
     
 }
 
 .cabecalho__logo {
-    width: 22.5vw;
-    padding: 2rem;
+    margin: 2rem;
+    width: 15%;
+}
+
+.cabecalho__pesquisa__botao {
+    display: none;
 }
 
 .cabecalho__pesquisa {
     background-color: #ffffff2d;
-    color: #FFFFFF;
-    width: 50vw;
-    height: 2.5rem;
-    padding: 1.35rem;
-    border-radius: 8px;
     border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
+    height: 2.5rem;
+    margin: 0 1rem;
+    padding: 1.35rem;
+    width: 57%;
 }
 
 .cabecalho__pesquisa::placeholder {
@@ -31,10 +36,11 @@
 }
 
 .cabecalho__perfil {
-    display: flex;
     align-items: center;
-    padding-left: 8rem;
-    width: 25vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 2rem;
+    width: 25%;
 }
 
 .cabecalho__perfil-imagem {
@@ -42,6 +48,85 @@
 }
 
 .cabecalho__perfil-usuario {
-    text-decoration: none;
     color: #FFFFFF;
+    text-decoration: none;
 }
+
+.menu-hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho__logo {
+        margin: 1rem;
+        width: 20%;
+    }
+
+    .cabecalho__pesquisa {
+        margin: 0 1.5rem;
+        width: 70%;
+    }
+    
+    .cabecalho__perfil {
+        display: none;
+    }
+
+    .menu-hamburger {
+        display: inline-block; 
+        width: 10%;
+    }
+
+    .menu-hamburger__botao {
+       background-color: transparent; 
+       border: none;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .cabecalho {
+        justify-content: space-between;
+    }
+
+    .cabecalho__logo {
+        padding-right: 10rem;
+    }
+    
+    .cabecalho__pesquisa {
+        display: none;
+        width: 60%;
+    }
+
+    .cabecalho__pesquisa__botao {
+        background-color: transparent;
+        border: none;
+        display: block;
+        margin-left: 6rem;
+        padding: 1rem 0.25rem;
+    }
+
+    .menu-hamburger {
+        display: inline-block; 
+        width: 20%;
+    }
+
+    .menu-hamburger__botao {
+        margin: 0 0.5rem;
+     }
+
+}
+
+@media screen and (max-width: 375px) {
+    .cabecalho__pesquisa__botao {
+        margin-left: 3rem;
+    }   
+
+}
+
+@media screen and (max-width: 320px) {
+    .cabecalho__pesquisa__botao {
+        margin-left: 0rem;
+    }   
+
+}
+

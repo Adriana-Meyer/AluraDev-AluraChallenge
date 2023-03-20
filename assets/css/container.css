@@ -1,5 +1,21 @@
 .containerPrincipal {
     display: flex;
     flex-direction: row;
-    margin: 3rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .containerPrincipal {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .containerPrincipal {
+        margin: 0 0.3rem;
+    }
 }

@@ -1,8 +1,8 @@
 .menu {
     display: flex;
     flex-direction: column;
-    width: 25vw;
-    margin-right: 1rem;
+    width: 15%;
+    margin: 0 2rem;
 }
 
 .menu__titulo {
@@ -27,4 +27,11 @@
 
 .inativo {
     opacity: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
 }
