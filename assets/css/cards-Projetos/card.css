@@ -1,0 +1,95 @@
+.card__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 0 2rem;
+    width: 100%;
+}
+
+.card {
+    background-color: #00000057;
+    border-radius: 8px;
+    height: auto;
+    margin: 0 1rem 2rem 1rem;
+    width: 45%;
+}
+
+.card__imagem {
+    width: 100%;
+}
+
+.card__titulo {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 1rem 2rem; 
+}
+
+.card__descricao {
+    margin: 1rem 2rem; 
+    opacity: 0.8;
+}
+
+.card__detalhes {
+    display: flex;
+    flex-direction: row;
+    margin: 2.5rem 2rem;
+}
+
+.card__comentarios, .card__curtidas {
+    margin-right: 1rem;
+ 
+}
+
+.card__usuario {
+    margin-left: 10rem;
+}
+
+.card__comentarios::before {
+    content: url(../../img/icone-comentarios.png);
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.card__curtidas::before {
+    content: url(../../img/icone-curtida.png);
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.card__usuario::before {
+    content: url(../../img/foto-miniatura.png);
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1300px)  {
+    .card__usuario {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card__container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 88%
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card__container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card__usuario {
+        margin-left: 1rem;
+    }    
+}
