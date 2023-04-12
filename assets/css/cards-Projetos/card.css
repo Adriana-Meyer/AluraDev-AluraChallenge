@@ -86,6 +86,13 @@
     vertical-align: middle;
 }
 
+.curtido::before {
+    content: url(../../img/icone-curtida-colorido.png);
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+
 @media screen and (max-width: 1300px)  {
     .card__usuario {
         margin-left: 2rem;
