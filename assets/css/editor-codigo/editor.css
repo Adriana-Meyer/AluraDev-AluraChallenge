@@ -40,9 +40,12 @@
 }
 
 .editor__textoCodigo {
+    display: block;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
     height: 100%;
-    white-space: pre-wrap;
     outline: 0;
+    white-space: pre-wrap;
 }
 
 .editor__botao {
