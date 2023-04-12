@@ -37,12 +37,35 @@
 }
 
 .card__comentarios, .card__curtidas {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
  
 }
 
 .card__usuario {
-    margin-left: 10rem;
+    margin-left: 8rem;
+    padding: 0.5rem;
+}
+
+.card__comentarios:hover, .card__curtidas:hover{
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    transition: 1s;
+}
+
+.card__usuario:hover{
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 1rem;
+    transition: 1s;
+}
+
+.card__usuario:hover::before {
+    content: url(../../img/foto.png);
+}
+
+.card__comentarios:active, .card__curtidas:active, .card__usuario:active{
+    background-color: rgba(255, 255, 255, 0.16);
 }
 
 .card__comentarios::before {
