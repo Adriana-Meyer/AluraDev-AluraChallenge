@@ -13,7 +13,7 @@
 }
 
 .cadastro__nomeProjeto, .cadastro__descricao, .cadastro__opcoes {
-    background-color: #ffffff2d;
+    background-color: rgba(255, 255, 255, 0.15);
     border: none;
     border-radius: 5px;
     color: #FFFFFF;
@@ -22,9 +22,13 @@
     margin-bottom: 1rem;
 }
 
+.cadastro__nomeProjeto:hover, .cadastro__descricao:hover, .cadastro__opcoes:hover {
+    background-color: rgba(255,255,255, 0.3);
+    transition: 1s;
+}
+
 .cadastro__nomeProjeto::placeholder, .cadastro__descricao::placeholder{
-    color: #ffffffb9;
-    opacity: 1;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .cadastro__nomeProjeto, .cadastro__opcoes {
@@ -38,7 +42,7 @@
 }
 
 .cadastro__opcoes {
-    color: #ffffffb9;
+    color: rgba(255, 255, 255, 0.5);
     width: 100%;
 }
 
@@ -62,8 +66,19 @@
     border: none;
     border-radius: 8px;
     color: #051D3B;
-    padding: 0.85rem;
+    height: 3rem;
+    transition: 1s;
 }
+
+.cadastro__botao:hover {
+    background-color: #7BA4FC;
+}
+
+.cadastro__botao:active {
+    border: 4px solid #4670da;
+    transition: 0s;
+}
+
 
 @media screen and (max-width: 768px) {
     .cadastro__container {

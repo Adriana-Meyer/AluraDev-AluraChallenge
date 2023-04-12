@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/editor-codigo/dracula-theme.css">
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/container.css">
     <link rel="stylesheet" href="./assets/css/cabecalho/header.css">
@@ -25,8 +26,10 @@
         <button class="cabecalho__pesquisa__botao"><img src="./assets/img/search-icon.png"></button>
         <input type="search" name="pesquisa" placeholder="Busque por algo" class="cabecalho__pesquisa"/>
         <div class="cabecalho__perfil"> 
-            <img src="./assets/img/foto.png" alt="Foto Perfil" class="cabecalho__perfil-imagem"/>
-            <a href="#" class="cabecalho__perfil-usuario">Harry</a>
+            <div class="cabecalho__perfil-container">
+                <img src="./assets/img/foto.png" alt="Foto Perfil" class="cabecalho__perfil-imagem"/>
+                <a href="#" class="cabecalho__perfil-usuario">Harry</a>
+            </div>
         </div>
         <nav class="menu-hamburger">
             <button class="menu-hamburger__botao"><img src="./assets/img/Menu hamburguer.png" class="menu-hamburger__icone"></button>
@@ -50,7 +53,9 @@
             <div class="editor__container" id="editorContainer">
                 <div class="editor__conteudo">
                     <img class="editor__iconeMac" src="./assets/img/mac_buttons.png">
-                    <textarea value="editor-texto" class="editor__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima, in magni deleniti molestiae rerum atque amet culpa, modi error mollitia odit nulla nostrum, maiores voluptatibus itaque. Ipsam, vel molestiae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus voluptas harum cupiditate libero totam autem quos at obcaecati magni aperiam quod quia repudiandae doloribus culpa, hic, perferendis vero suscipit quaerat.</textarea>
+                    <div class="editor__texto">
+                        <code class="editor__textoCodigo hljs" contenteditable="true" aria-label="Editor de Código">function teste() {}</code>
+                    </div>
                 </div>
             </div> 
             <button type="button" class="editor__botao">Visualizar com highlight</button>
@@ -74,5 +79,6 @@
         </aside>
     </div>
     <script type="module" src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 </body>
 </html>

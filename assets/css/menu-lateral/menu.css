@@ -26,7 +26,16 @@
 }
 
 .inativo {
-    opacity: 50%;
+    opacity: 16%;
+    transition: 1s;
+}
+
+.inativo:hover {
+    opacity: 64%;
+}
+
+.inativo:active{
+    opacity: 100%;
 }
 
 @media screen and (max-width: 768px) {

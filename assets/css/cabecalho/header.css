@@ -18,7 +18,7 @@
 }
 
 .cabecalho__pesquisa {
-    background-color: #ffffff2d;
+    background-color: rgba(255, 255, 255, 0.15);
     border: none;
     border-radius: 8px;
     color: #FFFFFF;
@@ -31,16 +31,33 @@
 }
 
 .cabecalho__pesquisa::placeholder {
-    color: #ffffffb9;
-    opacity: 1;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.cabecalho__pesquisa:hover {
+    background-color: rgba(255,255,255, 0.3);
+    transition: 1s;
 }
 
 .cabecalho__perfil {
+    width: 25%;
     align-items: center;
     display: flex;
     justify-content: flex-end;
     padding: 0px 2rem;
-    width: 25%;
+}
+
+.cabecalho__perfil-container { 
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 1rem;
+}
+
+.cabecalho__perfil-container:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    transition: 1s;
 }
 
 .cabecalho__perfil-imagem {
